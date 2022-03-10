@@ -8,14 +8,18 @@ function calcularMediaAritmética(lista) {
     return promedioLista
 }
 
+
 const lista1 = [
-    100,
     200,
     500,
+    100,
     400000000,
 ];
 
-const mitadLista1 = parseInt(lista1.length / 2);
+// Esto ordena la lista de mayor a menor
+const numeros = lista1.sort(function(a, b){return a - b});
+
+const mitadLista1 = parseInt(numeros.length / 2);
 
 function esPar(numerito) {
     if (numerito % 2 === 0) {
@@ -27,7 +31,7 @@ function esPar(numerito) {
 
 let mediana;
 
-if (esPar(lista1.length)) {
+if (esPar(numeros.length)) {
     const elemento1 = lista1[mitadLista1 - 1];
     const elemento2 = lista1[mitadLista1];
     
