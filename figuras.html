@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geométricas | Curso Práctico de JavaScript en Platzi</title>
+    <link rel="stylesheet" href="figuras.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Figuras geométricas
+        </h1>
+    </header>
+
+    <main>
+        <section class="cuadrado">
+            <h2>Cuadrado</h2>
+            <img src="http://assets.stickpng.com/images/58afdac9829958a978a4a691.png" alt="imagen de cuadrado">
+            <form action="">
+                <label for="InputCuadrado">
+                    Escribe cuánto mide el lado de tu cuadrado:
+                </label>
+                <input type="number" name="medida del lado del cuadrado" id="InputCuadrado">
+            </form>
+            <div>
+                <button type="button" onclick="calcularPerimetroCuadrado()">
+                    Calcular el perímetro
+                </button>
+                <button type="button" onclick="calcularAreaCuadrado()">
+                    Calcular el área
+                </button>
+            </div>
+            <div class="result">
+                <h4>Resultado</h4>
+                <p id="resultado-cuadrado">0</p>
+            </div>
+        </section>
+        
+        <section class="triangulo">
+            <h2>Triángulo</h2>
+            <img src="http://assets.stickpng.com/images/58afda92829958a978a4a688.png" alt="Imagen de un triángulo">
+            <form action="">
+                <label for="lado1-triangulo">
+                    Escribe cuánto mide cada el primer lado del triángulo: 
+                </label>
+                <input type="number" name="medida del lado del triangulo" id="lado1-triangulo">
+                <label for="lado2-triangulo">
+                    Escribe cuánto mide el segundo lado de tu triángulo:
+                </label>
+                <input type="number" name="medida del lado del triangulo" id="lado2-triangulo">
+                <label for="base-triangulo">
+                    Escribe cuánto mide la base de tu triángulo:
+                </label>
+                <input type="number" name="medida del lado del triangulo" id="base-triangulo">
+                <label for="altura-triangulo">
+                    Escribe cuánto mide la altura de tu triángulo:
+                </label>
+                <input type="number" name="medida del lado del triangulo" id="altura-triangulo">
+            </form>
+            <div>
+                <button type="button" onclick="calcularPerimetroTriangulo()">
+                    Calcular el perímetro
+                </button>
+                <button type="button" onclick="calcularAreaTriangulo()">
+                    Calcular el área
+                </button>
+            </div>
+            <div class="result">
+                <h4>Resultado</h4>
+                <p id="resultado-triangulo">0</p>
+            </div>
+        </section>
+
+        <section class="circulo">
+            <h2>Círculo</h2>
+            <img src="https://decagono.com/img/circulo.png" alt="Imagen de un círculo">
+            <form action="">
+                <label for="radio-circulo">
+                    Escribe cuánto mide el radio de tu círculo:
+                </label>
+                <input type="number" name="medida del radio del círculo" id="radio-circulo">
+            </form>
+            <div>
+                <button type="button" onclick="calcularPerimetroCirculo()">
+                    Calcular el perímetro
+                </button>
+                <button type="button" onclick="calcularDiametroCirculo()">
+                    Calcular el diámetro
+                </button>
+                <button type="button" onclick="calcularAreaCirculo()">
+                    Calcular el área
+                </button>
+            </div>
+            <div class="result">
+                <h4>Resultado</h4>
+                <p id="resultado-circulo">0</p>
+            </div>
+        </section>
+
+        <section class="triangulo-isosceles">
+            <h2>Tríangulo Isósceles</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Triangle.Isosceles.svg/1200px-Triangle.Isosceles.svg.png" alt="Imagen de un Tríangulo Isósceles">
+            <form action="">
+                <label for="lado1-triangulo-isosceles">
+                    Escribe cuánto mide el primer lado de tu triángulo isósceles:
+                </label>
+                <input type="number" name="medida del lado del triangulo" id="lado1-triangulo-isosceles">
+                <label for="lado2-triangulo-isosceles">
+                    Escribe cuánto mide el segundo lado de tu triángulo isósceles:
+                </label>
+                <input type="number" name="medida del lado del triangulo" id="lado2-triangulo-isosceles">
+                <label for="base-triangulo-isosceles">
+                    Escribe cuánto mide la base de tu triángulo isósceles:
+                </label>
+                <input type="number" name="medida del lado del triangulo" id="base-triangulo-isosceles">
+            </form>
+            <div>
+                <button type="button" onclick="calcularAlturaTrianguloIsosceles()">
+                    Calcular la altura
+                </button>
+            </div>
+            <div class="result">
+                <h4>Resultado</h4>
+                <p id="resultado-triangulo-isosceles">0</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="./figuras.js"></script>
+</body>
+</html>

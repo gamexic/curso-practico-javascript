@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #FC466B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+}
+header h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    color: white;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+main section {
+    height: 380px;
+    width: 380px;
+    box-shadow: 4px 4px 8px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+main section img {
+    height: 100px;
+    width: 100px;
+}
+main section h2 {
+    font-size: 2rem;
+}
+main section form {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+main section form label {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+main section form input {
+    border: none;
+    background-color: transparent;
+    border: 1px solid black;
+    outline: none;
+    text-decoration: none;
+}
+main section div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 12px;
+}
+main section div button {
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 2px;
+    margin: 6px;
+}
+main section .result {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+main section .result h4 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-bottom: 1px solid black;
+    padding: 0 4px;
+}
+main section .result p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width:1024px) {
+    main section {
+        height: 420px;
+        width: 420px;
+    }
+    main section form label {
+        font-size: 1.6rem;
+    }
+    main section div button {
+        font-size: 1.4rem;
+    }
+    main section .result h4 {
+        font-size: 2rem;
+    }
+    main section .result p {
+        font-size: 2rem;
+    }
+}
